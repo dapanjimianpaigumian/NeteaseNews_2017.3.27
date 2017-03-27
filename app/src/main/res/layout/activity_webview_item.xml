@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_webview_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yulu.zhaoxinpeng.neteasenews.activity.Webview_itemActivity">
+
+    <RelativeLayout
+        android:id="@+id/webview_top"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/main_top_color">
+
+        <ImageView
+            android:id="@+id/webview_item_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/action_button_back_pressed_light"  />
+
+        <ImageView
+            android:id="@+id/share_iv"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="110dp"
+            android:layout_marginTop="14dp"
+            android:layout_toLeftOf="@+id/webview_item_collect"
+            android:background="@drawable/share_image"
+             />
+
+        <TextView
+            android:id="@+id/webview_item_collect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:text="加入收藏"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+             />
+
+        <TextView
+            android:id="@+id/webview_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:text="TextView"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/webview_item_pro"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_below="@+id/webview_top"
+        android:layout_centerHorizontal="true"
+        android:progressDrawable="@drawable/webview_progressbar_layerlist" />
+
+    <WebView
+        android:id="@+id/webview_item_wv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/webview_item_pro"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+
+</RelativeLayout>

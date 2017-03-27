@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/slidinglayout_top"
+        android:layout_width="match_parent"
+        android:layout_height="170dp">
+
+        <ImageView
+            android:id="@+id/slidinglayout_headback_iv"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/slidinglayout_headback" />
+
+        <!--自定义View圆形头像-->
+        <com.yulu.zhaoxinpeng.neteasenews.view.RoundImageView
+            android:id="@+id/roundimageview"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="21dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="49dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/roundimageview" />
+
+        <TextView
+            android:id="@+id/slidinglayout_ID"
+            style="@style/VariableName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/slidinglayout_headback_iv"
+            android:layout_alignLeft="@+id/roundimageview"
+            android:layout_marginBottom="13dp"
+            android:text="@string/slidinglayout_ID" />
+
+        <TextView
+            android:id="@+id/slidinglayout_level"
+            style="@style/VariableLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/slidinglayout_ID"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/slidinglayout_ID"
+            android:background="@drawable/slidinglayout_id"
+            android:text="Lv.7" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/slidinglayout_middle_collection"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/slidingmenu_item_selector"
+        android:layout_below="@+id/slidinglayout_top">
+
+        <TextView
+            android:id="@+id/slidinglayout_collection"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:drawableLeft="@drawable/slidinglayout_collection_red"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="@string/slidinglayout_collection"
+            android:textSize="16sp" />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/slidinglayout_middle_offline"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/slidinglayout_middle_collection">
+
+        <TextView
+            android:id="@+id/slidinglayout_offline"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:drawableLeft="@drawable/slidinglayout_offline_red"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="@string/slidinglayout_offline"
+            android:textSize="16sp" />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/slidinglayout_middle_follow"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/slidinglayout_middle_offline">
+
+        <TextView
+            android:id="@+id/slidinglayout_follow"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:drawableLeft="@drawable/slidinglayout_follow_red"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="@string/slidinglayout_follow"
+            android:textSize="16sp" />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/slidinglayout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/slidinglayout_night_mode"
+            style="@style/VariableBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="16dp"
+            android:drawableLeft="@drawable/slidinglayout_night_mode"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="@string/slidinglayout_night_mode" />
+
+        <TextView
+            android:id="@+id/slidinglayout_setting"
+            style="@style/VariableBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/slidinglayout_night_mode"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="44dp"
+            android:layout_toRightOf="@id/slidinglayout_night_mode"
+            android:drawableLeft="@drawable/slidinglayout_setting"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="@string/slidinglayout_setting" />
+
+        <TextView
+            android:id="@+id/slidinglayout_exit"
+            style="@style/VariableBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/slidinglayout_setting"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="12dp"
+            android:layout_marginRight="30dp"
+            android:drawableLeft="@drawable/slidinglayout_exit"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="@string/slidinglayout_exit" />
+    </RelativeLayout>
+</RelativeLayout>
